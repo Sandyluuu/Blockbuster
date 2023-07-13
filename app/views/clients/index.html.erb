@@ -2,7 +2,6 @@
 
 <div class="container">
   <h1>Clients</h1>
-
   <%= link_to "New client", new_client_path %>
 
   <div id="clients">
@@ -16,11 +15,16 @@
           <th scope="col" colspan="3"></th>
         </tr>
       </thead>
-      <tbody>
-        <% @clients.each do |client| %>
-          <%= render client %>
-        <% end %>
-      </tbody>
+    <tbody>
+
+    <%== pagy_nav(@pagy) %>
+      <% @clients.each do |client| %>
+      <%= render client %>
+    <% end %>
+
+   
+    
+    </tbody>
     </table>
   </div>
 </div>

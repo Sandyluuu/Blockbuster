@@ -1,10 +1,13 @@
 class ClientsController < ApplicationController
+  include Pagy::Backend
   before_action :set_client, only: %i[ show edit update destroy ]
+  
 
   # GET /clients or /clients.json
   def index
-    @clients = Client.all
+    @pagy, @clients = pagy(Client.all)
   end
+  
 
   # GET /clients/1 or /clients/1.json
   def show
