@@ -1,8 +1,8 @@
 /* Estilos para la navegación de paginación */
 body {
   background: linear-gradient(to top, #5f6fe3, #e5edc6);
+  font-family: 'Titillium Web', sans-serif;
 }
-
 
 .pagy-nav.pagination {
   display: flex;
@@ -32,4 +32,7 @@ body {
 
 .navbar {
   background-color: #eff636;
+}
+.card  {
+  background-color: #7bc2f2;
 }
