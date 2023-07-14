@@ -1,4 +1,9 @@
 /* Estilos para la navegación de paginación */
+body {
+  background: linear-gradient(to top, #5f6fe3, #e5edc6);
+}
+
+
 .pagy-nav.pagination {
   display: flex;
   justify-content: center;
@@ -23,4 +28,8 @@
 .pagy-nav.pagination .page.disabled {
   color: #6c757d;
   cursor: not-allowed;
+}
+
+.navbar {
+  background-color: #eff636;
 }
